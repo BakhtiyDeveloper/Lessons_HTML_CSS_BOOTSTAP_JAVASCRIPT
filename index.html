@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styles_part_1</title>
+    <title>Tables</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            color: blue;
+        }
+        
+        thead{
+            text-align: left;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Lorem ipsum dolor sit amet.</h1>
@@ -16,6 +31,67 @@
     <img src=".\images/IM-0010-0001.jpeg" alt="bu yerda rasm bor" width="300px" height="200px">
     <img src="./images/IM-0016-0001.jpeg" alt="bu yerda rasm bor" width="200px" height="200px"> 
     <hr>
-        
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Familiyasi 
+                </th>
+                <th>
+                    Ismi
+                </th>
+                <th>
+                    Qiziqishlari 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Qurbanov 
+                </td>
+                <td>
+                    Bahtiyor
+                </td>
+                <td>
+                    Dasturlash
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    Bahodirova 
+                </td>
+                <td>
+                    Dinnura 
+                </td>
+                <td>
+                    Ingliz tili
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3 
+                </td>
+                <td>
+                    Sultanov 
+                </td> 
+                <td>
+                    Asqarjon
+                </td>
+                <td>
+                    Restoran
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
