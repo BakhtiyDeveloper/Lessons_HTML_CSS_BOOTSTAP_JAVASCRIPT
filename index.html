@@ -6,41 +6,67 @@
     <title>Lists</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        .boxes{
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header{
+            height: 100px;
+            line-height: 100px;            
+        }
+
+        nav{
+            height: 100px;
+            line-height: 100px;
+            margin-top: 1px;
+            
+        }
+
+        section{
+            height: 500px;
+            margin-top: 1px;
+            width: 70%;
+            line-height: 500px;
+            float: left;
+        }
+
+        aside{
+            height: 500px;
+            width: 30%;
+            line-height: 500px;
+            float: left;
+            margin-top: 1px;
+            
+        }
+        
+        footer{
+            height: 100px;
+            line-height: 100px;
+            margin-top: 1px;
+            float: left;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <form action="/server.php" method="GET">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username"> <br> <br>
-        <label for="username2">Username 2</label>
-        <input type="text" name="username2" id="username2"><br> <br>
-        <label for="email">Usermail</label>
-        <input type="email" name="usermail" id="email"><br><br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password"><br><br>
-        <label for="sana">Tug'ilgan sana</label>
-        <input type="date" name="sana" id="sana"><br><br>
-        <label for="talaba">Talaba</label>
-        <input type="checkbox" name="talaba" id="talaba"><br><br>
-        <label for="erkak">Erkak</label>
-        <input type="radio" name="gender" value="erkak"><br><br>
-        <label for="ayol">Ayol</label>
-        <input type="radio" name="gender" value="ayol"><br><br>
-        <button type="submit">Login</button>
-        <hr>
-        <br>
-        <label for="tajriba">Tajribangiz</label>
-        <select name="experience" id="tajriba">
-            <option value="0">Tajribam yo'q</option>
-            <option value="1">Tajribam 1 yil</option>
-            <option value="2">Tajribal 3 yil gacha</option>
-            <option value="3">Tajribal 5 yildan ko'p</option>
-        </select> <br><br>
-        <label for="haqida">O'zim haqimda</label><br>
-        <textarea name="about" id="haqida" rows="10" cols="40"></textarea><br>
-        <button type="submit">Register</button> 
-    </form>
-    
-    
-
+    <header class="boxes">
+        Header
+    </header>
+    <nav class="boxes">
+        Navbar
+    </nav>
+    <section class="boxes">
+        Section
+    </section>
+    <aside class="boxes">
+        Aside
+    </aside>
+    <footer class="boxes">
+        Footer
+    </footer>
 </body>
 </html>
