@@ -5,85 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #mevalar{
-            color: red;
-            text-align: right;
-            border: 3px;
-            margin-top: 30px;
-            font-style: italic;
 
-
-        }
-
-        #ismlar{
-            color: blue;
-            margin: 20px;
-            border: 60px;
-            font-style: italic;
-        }
-    </style>
 </head>
 <body>
-    <h3>
-        Mevalar ro'yhati
-    </h3>
-    <ul id="mevalar">
-        <li>
-            Anor
-        </li>
-        <li>
-            Anjir
-        </li>
-        <li>
-            Nok
-        </li>
-        <li>
-            Behi
-        </li>
-        <h5>Boshqa mevalar</h5>
-        <ul>
-            <li>
-                Olma
-            </li>
-            <li>
-                Bodom
-            </li>
-            <li>
-                Yong'oq
-            </li>
-        </ul>        
-    </ul>
-    <hr>
-    <h3>
-        Ismlar ro'yhati
-    </h3>
-    <ol id="ismlar">
-        <li>
-            Bahtiyor
-        </li>
-        <li>
-            Asqar
-        </li>
-        <li>
-            Qahramon
-        </li>
-        <li>
-            Botir
-        </li>
-        <h5>Boshqa ismlar</h5>
-        <ol>
-            <li>
-                Shoxruh
-            </li>
-            <li>
-                Bosit
-            </li>
-            <li>
-                Misha 
-            </li>
-        </ol>
-    </ol>
-    <hr>    
+    <form action="/server.php" method="GET">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"> <br> <br>
+        <label for="username2">Username 2</label>
+        <input type="text" name="username2" id="username2"><br> <br>
+        <label for="email">Usermail</label>
+        <input type="email" name="usermail" id="email"><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <label for="sana">Tug'ilgan sana</label>
+        <input type="date" name="sana" id="sana"><br><br>
+        <label for="talaba">Talaba</label>
+        <input type="checkbox" name="talaba" id="talaba"><br><br>
+        <label for="erkak">Erkak</label>
+        <input type="radio" name="gender" value="erkak"><br><br>
+        <label for="ayol">Ayol</label>
+        <input type="radio" name="gender" value="ayol"><br><br>
+        <button type="submit">Login</button>
+    </form>
+
 </body>
 </html>
