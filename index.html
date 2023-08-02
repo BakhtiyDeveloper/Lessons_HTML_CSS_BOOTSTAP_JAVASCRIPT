@@ -3,70 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists</title>
+    <title>Text-align</title>
     <link rel="stylesheet" href="style.css">
-
     <style>
-        .boxes{
+        .box {
+            background-color: red;
+            margin: 10px;
+            padding: 20px;
+            border: 15px;
+            border-color: rgb(119, 6, 6);
+            text-align: center;
+            
+        }
+
+        .container {
+            border: 3px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 150px;
             background-color: blue;
-            font-size: 20px;
-            color: white;
+        }
+
+        .box3 {
+            height: 250px;
+            width: 150px;
+            background-color: chocolate;
+            vertical-align: middle;
+        }
+
+        .container span {
+            display: inline-block;
+            vertical-align: middle;
             text-align: center;
         }
-
-        header{
-            height: 100px;
-            line-height: 100px;            
-        }
-
-        nav{
-            height: 100px;
-            line-height: 100px;
-            margin-top: 1px;
-            
-        }
-
-        section{
-            height: 500px;
-            margin-top: 1px;
-            width: 70%;
-            line-height: 500px;
-            float: left;
-        }
-
-        aside{
-            height: 500px;
-            width: 30%;
-            line-height: 500px;
-            float: left;
-            margin-top: 1px;
-            
-        }
-        
-        footer{
-            height: 100px;
-            line-height: 100px;
-            margin-top: 1px;
-            float: left;
-            width: 100%;
-        }
     </style>
+
 </head>
 <body>
-    <header class="boxes">
-        Header
-    </header>
-    <nav class="boxes">
-        Navbar
-    </nav>
-    <section class="boxes">
-        Section
-    </section>
-    <aside class="boxes">
-        Aside
-    </aside>
-    <footer class="boxes">
-        Footer
-    </footer>
+    <h1 class="box">Heading 1</h1>
+    <hr>
+    <div class="container">
+        <span class="box1">Box 1</span>
+        <span class="box2">Box 2</span>
+        <span class="box3">Box 2</span>
+    </div>
 </body>
 </html>
